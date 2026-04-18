@@ -17,14 +17,22 @@ Beginner-friendly and simple to understand.
 
 ## Dependencies
 Install required packages:
-
-sudo pacman -S sway alacritty rofi nautilus brave
+For Arch Linux
+```bash
+sudo pacman -S sway alacritty rofi 
+```
+For Ubuntu/Debian based
+```bash
+sudo apt install sway alacritty rofi 
+```
 
 ## Installation
+```bash
 git clone https://github.com/kishore-3101o/sway-config.git
 cd sway-config
 mkdir -p ~/.config/sway
 cp config ~/.config/sway/config
+```
 
 ## Status
 🚧 Work in Progress (more features coming)
