@@ -9,12 +9,6 @@ Beginner-friendly and simple to understand.
 - Lightweight
 - Beginner Friendly
 
-## Keybindings
-- Mod + X → Terminal
-- Mod + B → Brave Browser
-- Mod + F → File Manager
-- Mod + D → App Launcher
-
 ## Dependencies
 Install required packages:
 - For Arch Linux
@@ -25,6 +19,12 @@ sudo pacman -S sway alacritty rofi
 ```bash
 sudo apt install sway alacritty rofi 
 ```
+
+## Keybindings
+- Mod + X → Terminal
+- Mod + B → Brave Browser
+- Mod + F → File Manager
+- Mod + D → App Launcher
 
 ## Installation
 ```bash
