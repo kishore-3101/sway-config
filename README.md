@@ -17,11 +17,11 @@ Beginner-friendly and simple to understand.
 
 ## Dependencies
 Install required packages:
-For Arch Linux
+- For Arch Linux
 ```bash
 sudo pacman -S sway alacritty rofi 
 ```
-For Ubuntu/Debian based
+- For Ubuntu/Debian based
 ```bash
 sudo apt install sway alacritty rofi 
 ```
