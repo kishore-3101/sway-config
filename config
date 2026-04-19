@@ -1,5 +1,5 @@
 #----------------------------------------------------------------#
-#                KISHORE'S  SWAY CONFIGURATION                   #
+#                     My own sway config                         #
 #----------------------------------------------------------------#
 #   Copy this to ~/.config/sway/config and edit it as you like.  #
 #----------------------------------------------------------------#
@@ -57,6 +57,24 @@ set $menu rofi -show drun
 # Execute File Manager (Nautilus - Gnome File Manager) Install using sudo pacman -S nautilus
     bindsym $mod+f exec nautilus
 
+#------------------------------------------------#
+#           Hardware key controls.               #
+#------------------------------------------------#
+
+#volume up (Increases volume by 3%)
+    bindsym XF86AudioRaiseVolume exec pamixer -i 3
+
+#volume down (Decreases volume by 3%)
+    bindsym XF86AudioLowerVolume exec pamixer -d 3
+
+#volume mute
+    bindsym XF86AudioMute exec pamixer -t
+
+#Brightness up (Increases brightness by 5%)
+    bindsym XF86MonBrightnessUp exec brightnessctl set +5%
+
+#Brightness down (Decreases brightness by 5%)
+    bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
 
 #------------------------------------------------#
 #                 Moving around                  #
@@ -112,10 +130,10 @@ set $menu rofi -show drun
 mode "resize" {
 
 # Resize windows with arrow key - $mod+R+[up|down|right|left] arrow keys
-    bindsym Left resize shrink width 10px
-    bindsym Down resize grow height 10px
-    bindsym Up resize shrink height 10px
-    bindsym Right resize grow width 10px
+    bindsym Right resize shrink width 10px
+    bindsym Left resize grow width 10px
+    bindsym Up resize grow height 10px
+    bindsym Down resize shrink height 10px
 
 # Return to default mode
     bindsym Return mode "default"
