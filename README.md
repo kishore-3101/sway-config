@@ -20,7 +20,7 @@ sudo pacman -S sway alacritty rofi pamixer brightnessctl waybar
 ```bash
 sudo apt install sway alacritty rofi pamixer brightnessctl waybar
 ```
-*** For Fedora***
+***- For Fedora***
 ```bash
 sudo dnf install sway alacritty rofi pamixer brightnessctl waybar
 ```
