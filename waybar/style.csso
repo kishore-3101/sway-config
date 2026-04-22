@@ -1,0 +1,40 @@
+* {
+  font-family: DejaVu Sans, Font Awesome;
+  font-size: 13px;
+}
+
+window#waybar {
+  background: #1e1e2e;
+  color: #cdd6f4;
+}
+
+#clock, #battery, #network, #pulseaudio {
+  padding: 0 6px;
+}
+
+/* Workspace buttons */
+#workspaces button {
+  padding: 2px 5px;
+  margin: 2px;
+  border-radius: 0px;
+  background: transparent;
+  color: #cdd6f4;
+  border: 2px solid transparent;
+}
+
+/* Active workspace (NO BLUE) */
+#workspaces button.focused {
+  background: transparent;       /* removed blue */
+  color: #ffffff;                /* brighter text */
+  border: 2px solid #ffffff;     /* white border highlight */
+}
+
+/* Optional: hover effect */
+#workspaces button:hover {
+  background: #313244;
+}
+
+#workspaces button.urgent {
+  background: #f38ba8;
+}
+

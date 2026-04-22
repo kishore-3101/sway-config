@@ -1,0 +1,37 @@
+{
+  "layer": "top",
+  "position": "top",
+
+  "modules-left": ["sway/workspaces", "custom/add_workspace"],
+  "modules-center": ["clock"],
+  "modules-right": ["pulseaudio", "network", "battery"],
+
+  "network": {
+    "format-wifi": "Wifi : {essid}",
+    "format-ethernet": "Ethernet Connected",
+    "format-disconnected": "⚠ Disconnected",
+    "tooltip-format": "{ifname} via {gwaddr}"
+  },
+
+  "pulseaudio": {
+    "format": "Volume : {volume}%",
+    "format-muted": "Muted"
+  },
+
+  "battery": {
+    "format": "Battery : {capacity}%  ",
+    "format-charging": "⚡{capacity}%  ",
+    "format-full": "Charged fully  ",
+    "format-warning": "⚠ Battery : {capacity}%  "
+  },
+
+  "clock": {
+    "format": "{:%H:%M | %d %b %y}"
+  },
+  
+  "custom/add_workspace": {
+    "format": "  +  ",
+"on-click": "~/.config/waybar/scripts/new_workspace.sh",
+    "tooltip": false
+  }
+}

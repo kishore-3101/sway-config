@@ -1,5 +1,5 @@
 #----------------------------------------------------------------#
-#                     My own sway config                         #
+#               KISHORE'S SWAY CONFIGURATION                     #
 #----------------------------------------------------------------#
 #   Copy this to ~/.config/sway/config and edit it as you like.  #
 #----------------------------------------------------------------#
@@ -120,6 +120,12 @@ set $menu rofi -show drun
     bindsym $mod+Shift+9 move container to workspace number 9
     bindsym $mod+Shift+0 move container to workspace number 10
 
+# Switch to next workspace
+    bindsym $mod+Tab workspace next
+
+# Disable focus of containers on hover
+    focus_follows_mouse no
+
  # Note: workspaces can have any name you want, not just numbers.
  # We just use 1-10 as the default.
 
@@ -141,4 +147,37 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
+#-------------------------------------------------#
+#       Trackpad and mouse Configuration          #
+#-------------------------------------------------#
+
+# Touchpad
+     input type:touchpad {
+	natural_scroll enabled
+	tap enabled
+	dwt enabled
+	scroll_method two_finger
+    }
+
+# Mouse
+    input type:pointer {
+	natural_scroll enabled
+	tap enabled
+	dwt enabled
+	scroll_method two_finger
+    }
+
+#------------------------------------------------#
+#                    Waybar                      #
+#------------------------------------------------#
+
+#Display waybar
+    exec_always pkill waybar;  waybar
+
+#------------------------------------------------#
+#                  Wallpaper                     #
+#------------------------------------------------#
+
+  output * bg /home/kishore/Downloads/Marvel/wallpaper.jpg fill
+ 
 include /etc/sway/config.d/*
