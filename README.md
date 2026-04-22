@@ -20,20 +20,20 @@ sudo pacman -S sway alacritty rofi pamixer brightnessctl waybar
 ```bash
 sudo apt install sway alacritty rofi pamixer brightnessctl waybar
 ```
-***- For Fedora***
+*** For Fedora***
 ```bash
 sudo dnf install sway alacritty rofi pamixer brightnessctl waybar
 ```
 
 ##  Keybindings
 
-### Apps
+### ***Apps***
 - Mod + X → Terminal  
 - Mod + B → Brave Browser  
 - Mod + F → File Manager  
 - Mod + D → App Launcher  
 
-### Window management
+### ***Window management***
 - Mod + Shift + C → Reload Sway  
 - Mod + Tab → Switch between workspaces  
 - Mod + Number (1–9) → Go to workspace  
