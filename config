@@ -1,7 +1,7 @@
 #----------------------------------------------------------------#
 #               KISHORE'S SWAY CONFIGURATION                     #
 #----------------------------------------------------------------#
-#   Copy this to ~/.config/sway/config and edit it as you like.  #
+#    Copy this to ~/.config/sway/config and edit it as you like.   #
 #----------------------------------------------------------------#
 #           Read `man 5 sway` for a complete reference.          #
 #----------------------------------------------------------------#
@@ -33,7 +33,7 @@ set $menu rofi -show drun
 #------------------------------------------------#
 
 # Kill focused window
-    bindsym $mod+Shift+q kill
+    bindsym $mod+q kill
 
 # Start the launcher
     bindsym $mod+d exec $menu
