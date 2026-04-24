@@ -34,6 +34,7 @@ sudo dnf install sway alacritty rofi pamixer brightnessctl waybar
 - Mod + D → App Launcher  
 
 ### ***Window management***
+- Mod + Q → Kill focused container
 - Mod + Shift + C → Reload Sway  
 - Mod + Tab → Switch between workspaces  
 - Mod + Number (1–9) → Go to workspace  
