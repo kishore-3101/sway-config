@@ -1,22 +1,24 @@
 * {
   font-family: FontAwesome, monospace;
-  font-size: 13px;   /* 10–12 is sweet spot */
+  font-size: 13px; /* 10-12 is sweet spot */
 }
 
 window#waybar {
-  background: #1e1e2e;
+  background: #1A013B;
   color: #cdd6f4;
 }
 
-#clock, #battery, #network, #pulseaudio {
-  padding: 0 6px; font-weight: bold;
-}
-
-#clock {
+/* Modules */
+#clock,
+#battery,
+#network,
+#pulseaudio,
+#custom-caffeine {
+  padding: 0 6px;
   font-weight: bold;
 }
 
-/* Workspace buttons */
+/* Workspaces */
 #workspaces button {
   padding: 2px 5px;
   margin: 2px;
@@ -26,27 +28,34 @@ window#waybar {
   border-bottom: 2px solid transparent;
 }
 
-/* Active workspace (NO BLUE) */
+/* Focused workspace */
 #workspaces button.focused {
   background: transparent;
-  font-weight: bold;       /* removed blue */
-  color: #ffffff;                /* brighter text */
-  border-bottom: 2px solid #ffffff;     /* white border highlight */
+  font-weight: bold;
+  color: #ffffff;
+  border-bottom: 2px solid #ffffff;
 }
 
-/* Optional: hover effect */
+/* Hover */
 #workspaces button:hover {
   background: #313244;
 }
 
+/* Urgent */
 #workspaces button.urgent {
   background: #f38ba8;
 }
 
+/* Add workspace button */
 #custom-add_workspace {
   font-weight: bold;
+  padding: 0 6px;
 }
 
+/* Caffeine styling */
+#custom-caffeine {
+  padding: 0 10px;
+}
 
 
 

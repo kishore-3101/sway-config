@@ -4,18 +4,18 @@
 
   "modules-left": ["sway/workspaces", "custom/add_workspace"],
   "modules-center": ["clock"],
-  "modules-right": ["pulseaudio", "network", "battery"],
+  "modules-right": ["custom/caffeine", "pulseaudio", "network", "battery"],
 
   "network": {
-    "format-wifi": "Wifi : {essid}",
-    "format-ethernet": "Ethernet Connected",
-    "format-disconnected": "⚠ Disconnected",
-    "tooltip-format": "{ifname} via {gwaddr}"
+    "format-wifi": "Wifi : {essid} |",
+    "format-ethernet": "Ethernet Connected |",
+    "format-disconnected": "⚠ Disconnected |",
+    "tooltip-format": "{ifname} via {gwaddr} |"
   },
 
   "pulseaudio": {
-    "format": "Volume : {volume}%",
-    "format-muted": "Muted"
+    "format": "Volume : {volume}% |C",
+    "format-muted": "Muted |"
   },
 
   "battery": {
@@ -28,10 +28,17 @@
   "clock": {
     "format": "{:%H:%M | %d %b %y}"
   },
-  
+
   "custom/add_workspace": {
     "format": "  +  ",
-"on-click": "~/.config/waybar/scripts/new_workspace.sh",
+    "on-click": "~/.config/waybar/scripts/new_workspace.sh",
     "tooltip": false
+  },
+
+  "custom/caffeine": {
+    "exec": "~/.config/sway/scripts/caffeine_status.sh",
+    "interval": 1,
+    "on-click": "~/.config/sway/scripts/caffeine.sh",
+    "tooltip": true
   }
 }

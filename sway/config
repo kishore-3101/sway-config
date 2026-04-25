@@ -39,7 +39,10 @@ set $menu rofi -show drun
     bindsym $mod+d exec $menu
 
 # Reload the configuration file
-    bindsym $mod+Shift+c reload
+    bindsym $mod+Shift+r reload
+
+# Poweroff
+    bindsym $mod+Shift+P exec systemctl poweroff
 
 # Exit sway
     bindsym $mod+Shift+e exec swaynag -t warning -m 'Do you really wanna exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
@@ -161,7 +164,7 @@ bindsym $mod+r mode "resize"
 
 # Mouse
     input type:pointer {
-	natural_scroll enabled
+	natural_scroll disabled
 	tap enabled
 	dwt enabled
 	scroll_method two_finger
@@ -179,5 +182,15 @@ bindsym $mod+r mode "resize"
 #------------------------------------------------#
 
   output * bg /home/kishore/Downloads/Marvel/wallpaper.jpg fill
- 
+
+#------------------------------------------------#
+#                Toggle Caffine                  #
+#------------------------------------------------#
+
+    bindsym $mod+Shift+c exec ~/.config/sway/scripts/caffeine.sh
+
+# Kill swayidle
+
+    exec_always sh -c 'pkill swayidle; ~/.config/sway/scripts/start_idle.sh' 
+   
 include /etc/sway/config.d/*
