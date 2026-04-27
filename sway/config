@@ -44,6 +44,12 @@ set $menu rofi -show drun
 # Poweroff
     bindsym $mod+Shift+P exec systemctl poweroff
 
+# Sleep
+    bindsym $mod+L exec systemctl suspend
+
+#Lock and Sleep
+    bindsym $mod+Shift+L exec "swaylock -f -c 000000 && systemctl suspend"
+
 # Exit sway
     bindsym $mod+Shift+e exec swaynag -t warning -m 'Do you really wanna exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
 
