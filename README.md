@@ -42,7 +42,12 @@ sudo dnf install sway alacritty rofi pamixer brightnessctl waybar swayidle swayl
 - Mod + Tab → Switch between workspaces  
 - Mod + Number (1–9) → Go to workspace  
 - Mod + Shift + Number (1-9) → Move focused container to selected workspace  
-- Mod + Arrow keys → Switch focus between containers  
+- Mod + Arrow keys → Switch focus between containers
+
+### ***Power / System Controls***
+- Mod + Shift + P → Poweroff
+- Mod + L → Sleep
+- Mod + Shift + L → Lock and Sleep
 
 ## 📥 Installation
 ```bash
