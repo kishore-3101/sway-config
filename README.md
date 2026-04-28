@@ -53,10 +53,7 @@ sudo dnf install sway alacritty rofi pamixer brightnessctl waybar swayidle swayl
 ```bash
 git clone https://github.com/kishore-3101/sway-config.git
 cd sway-config
-mkdir -p ~/.config/sway
-mkdir -p ~/.config/waybar
-cp -r sway/* ~/.config/sway/
-cp -r waybar/* ~/.config/waybar/
+cp -r ./* ~/.config/
 ```
 
 ## 🚀 Future Plans
