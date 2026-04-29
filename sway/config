@@ -26,7 +26,7 @@ set $term alacritty
 #       setting up application launcher          #
 #------------------------------------------------#
 
-set $menu rofi -show drun
+set $menu rofi -show drun -theme ~/.config/rofi/theme.rasi
 
 #------------------------------------------------#
 #                  Key bindings                  #
