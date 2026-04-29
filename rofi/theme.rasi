@@ -1,0 +1,112 @@
+/* ---- GLOBAL ---- */
+* {
+    bg: #1A013B;
+    fg: #ffffff;
+
+    background: #1A013B;
+    foreground: #ffffff;
+
+    selected: #ffffff;
+
+    selected-normal-background: #ffffff;
+    selected-normal-foreground: #1A013B;
+
+    selected-active-background: #ffffff;
+    selected-active-foreground: #1A013B;
+
+    selected-urgent-background: #ffffff;
+    selected-urgent-foreground: #1A013B;
+
+    normal-background: #1A013B;
+    normal-foreground: #ffffff;
+
+    alternate-normal-background: #1A013B;
+    alternate-normal-foreground: #ffffff;
+
+    border-color: #ffffff;
+
+    spacing: 4;
+}
+
+/* ---- WINDOW ---- */
+window {
+    width: 700px;
+    border: 0px;
+    border-radius: 0px;
+    border-color: #ffffff;
+    background-color: #1A013B;
+}
+
+/* ---- MAIN ---- */
+mainbox {
+    padding: 10px;
+    background-color: #1A013B;
+}
+
+/* ---- INPUT BAR ---- */
+inputbar {
+    background-color: #1A013B;
+    border-radius: 0px;
+    border: 1px;
+    padding: 8px;
+    margin: 0px 0px 10px 0px;
+}
+
+entry {
+    background-color: transparent;
+    text-color: #ffffff;
+}
+
+prompt {
+    background-color: transparent;
+    text-color: #ffffff;
+}
+
+textbox-prompt-colon {
+    background-color: transparent;
+    text-color: #ffffff;
+}
+
+textbox {
+    background-color: transparent;
+    text-color: #ffffff;
+}
+
+/* ---- LIST ---- */
+listview {
+    background-color: #1A013B;
+    spacing: 6px;
+    lines: 8;
+    scrollbar: false;
+}
+
+/* ---- ITEMS ---- */
+element {
+    background-color: transparent;
+    text-color: #ffffff;
+    padding: 8px;
+    border-radius: 0px;
+}
+
+element alternate.normal {
+    background-color: #1A013B;
+    text-color: #ffffff;
+}
+
+/* selected item */
+element selected {
+    background-color: #ffffff;
+    text-color: #1A013B;
+}
+
+/* text inside item */
+element-text {
+    background-color: transparent;
+    text-color: inherit;
+}
+
+/* icons */
+element-icon {
+    background-color: transparent;
+    size: 1em;
+}
