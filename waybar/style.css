@@ -56,6 +56,7 @@ window#waybar {
 /* Caffeine styling */
 #custom-caffeine {
   padding: 0 10px;
+  font-weight: bold;
 }
 
 #custom-recording {
