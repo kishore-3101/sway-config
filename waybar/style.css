@@ -13,7 +13,8 @@ window#waybar {
 #battery,
 #network,
 #pulseaudio,
-#custom-caffeine {
+#custom-caffeine
+#custom-recording {
   padding: 0 6px;
   font-weight: bold;
 }
@@ -57,5 +58,8 @@ window#waybar {
   padding: 0 10px;
 }
 
-
+#custom-recording {
+    color: #ff4444;
+    font-weight: bold;
+}
 

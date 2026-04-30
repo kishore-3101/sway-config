@@ -2,7 +2,7 @@
   "layer": "top",
   "position": "top",
 
-  "modules-left": ["sway/workspaces", "custom/add_workspace"],
+  "modules-left": ["sway/workspaces", "custom/add_workspace", "custom/recording"],
   "modules-center": ["clock"],
   "modules-right": ["custom/caffeine", "pulseaudio", "network", "battery"],
 
@@ -14,7 +14,7 @@
   },
 
   "pulseaudio": {
-    "format": "Volume : {volume}% |C",
+    "format": "Volume : {volume}% |",
     "format-muted": "Muted |"
   },
 
@@ -30,7 +30,7 @@
   },
 
   "custom/add_workspace": {
-    "format": "  +  ",
+    "format": " + ",
     "on-click": "~/.config/waybar/scripts/new_workspace.sh",
     "tooltip": false
   },
@@ -38,7 +38,10 @@
   "custom/caffeine": {
     "exec": "~/.config/sway/scripts/caffeine_status.sh",
     "interval": 1,
-    "on-click": "~/.config/sway/scripts/caffeine.sh",
     "tooltip": true
+  },
+  "custom/recording": {
+    "exec": "pgrep -x wf-recorder > /dev/null && echo '  🔴 Recording Screen ' || echo ''",
+    "interval": 1
   }
 }
