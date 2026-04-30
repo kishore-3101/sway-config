@@ -7,12 +7,9 @@ A clean and beginner-friendly Sway (Wayland) configuration built on Arch Linux. 
 - 🎨 Minimalist and clean design
 - 📝 Well-structured and documented config
 - ⚡ Lightweight and fast
-- 🎓 Beginner-friendly setup
 - ☕ Caffeine mode (prevents auto sleep when enabled)
 - 📊 Waybar integration with system status
-- 📸 Screenshot support (full + selection with clipboard copy)
-- 🎥 Screen recording with system audio
-- 🔔 Notification support using mako
+- 💻 Easy customization
 
 ## 📦 Dependencies
 
@@ -81,12 +78,40 @@ sudo dnf install sway alacritty rofi pamixer brightnessctl waybar swayidle swayl
 | `Mod + Alt + R` | Record selected area |
 | `Mod + S` | Stop recording |
 
-## 📁 Installation
+## 🛠️ Installation
 
 ```bash
 git clone https://github.com/kishore-3101/sway-config.git
 cd sway-config
 cp -r ./* ~/.config/
+```
+## 📁 Repo Structure
+
+```
+sway-config/
+├── sway/
+│   ├── scripts/
+│   │   ├── caffeine.sh
+│   │   ├── caffeine_status.sh
+│   │   └── start_idle.sh
+│   └── config
+│   
+├── waybar/
+│   ├── scripts/
+│   │   └── new_workspace.sh
+│   ├── config
+│   └── style.css
+│
+├── wallpaper/
+│   └── wallpaper.jpg
+│
+├── rofi/
+│   └── theme.rasi
+│
+├── mako/
+│   └── config
+│
+└── README.md
 ```
 
 ## 🧠 Notes
@@ -100,10 +125,6 @@ cp -r ./* ~/.config/
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/kishore-3101/sway-config/issues).
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
 
 ## ⭐ Show Your Support
 
