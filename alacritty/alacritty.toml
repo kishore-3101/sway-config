@@ -1,0 +1,10 @@
+[colors.primary]
+background = "#1c1c1c"
+foreground = "0xFFFFFF"
+
+[window]
+opacity = 0.85
+
+[window.padding]
+x = 10
+y = 10
