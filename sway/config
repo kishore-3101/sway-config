@@ -181,7 +181,7 @@ bindsym $mod+r mode "resize"
 #------------------------------------------------#
 
 #Display waybar
-    exec_always pkill waybar; waybar
+    exec_always sh -c "sleep 1; pgrep waybar >/dev/null && pkill waybar; waybar"
 
 #------------------------------------------------#
 #                  Wallpaper                     #
