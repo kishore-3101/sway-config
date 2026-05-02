@@ -95,6 +95,9 @@ sway-config/
 │   │   ├── caffeine_status.sh
 │   │   └── start_idle.sh
 │   └── config
+|
+├──alacritty/
+|   └── alcritty.toml
 │   
 ├── waybar/
 │   ├── scripts/
