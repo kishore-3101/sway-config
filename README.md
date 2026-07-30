@@ -1,6 +1,6 @@
 # ⚡ Minimal Sway Setup
 
-A clean and beginner-friendly Sway (Wayland) configuration built on Arch Linux. Designed to be minimal, functional, and easy to understand for daily use.
+A clean and beginner-friendly Sway (Wayland) configuration built for Linux. Designed to be minimal, functional, and easy to understand for daily use.
 
 ## ✨ Features
 
