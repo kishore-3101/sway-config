@@ -1,17 +1,25 @@
-# ⚡ Minimal Sway Setup
+# 🖥️ Minimal Sway Setup
 
-A clean and beginner-friendly Sway (Wayland) configuration built for Linux. Designed to be minimal, functional, and easy to understand for daily use.
+A clean and minimalist configuration for the ***Sway*** tiling window manager, designed to be lightweight, functional, and easy to customize.
+
+***This repository provides a complete, plug-and-play setup for a modern wayland desktop environment, built around sway.***
+
+![Maintained](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
 
 ## ✨ Features
 
-- 🎨 Minimalist and clean design
-- 📝 Well-structured and documented config
-- ⚡ Lightweight and fast
-- ☕ Caffeine mode (prevents auto sleep when enabled)
-- 📊 Waybar integration with system status
-- 💻 Easy customization
+-  Minimalist and clean design
+-  Built for Wayland
+-  Lightweight and fast
+-  Rofi application launcher
+-  Caffeine mode (prevents auto sleep when enabled)
+-  Waybar integration with system status
+-  Easy customization
 
 ## 📦 Dependencies
+
+> [!NOTE]
+> Package names may differ slightly across Linux distributions.
 
 ### Arch Linux
 
@@ -62,6 +70,7 @@ sudo dnf install sway alacritty rofi pamixer brightnessctl waybar swayidle swayl
 | `Mod + L` | Suspend |
 | `Mod + Shift + L` | Lock + Suspend |
 | `Mod + Shift + C` | Toggle Caffeine mode |
+| `Mod + Shift + W` | Toggle Wi-Fi |
 
 ### 📸 Screenshot
 
@@ -83,7 +92,7 @@ sudo dnf install sway alacritty rofi pamixer brightnessctl waybar swayidle swayl
 ```bash
 git clone https://github.com/kishore-3101/sway-config.git
 cd sway-config
-cp -r ./* ~/.config/
+cp -r alacritty mako rofi sway waybar wallpaper ~/.config/
 ```
 ## 📁 Repo Structure
 
@@ -93,6 +102,7 @@ sway-config/
 │   ├── scripts/
 │   │   ├── caffeine.sh
 │   │   ├── caffeine_status.sh
+│   │   ├── wifi_toggle.sh
 │   │   └── start_idle.sh
 │   └── config
 |
@@ -119,11 +129,11 @@ sway-config/
 
 ## 🧠 Notes
 
-- 📸 Screenshots are saved in: `~/Pictures/Screenshots`
-- 🎥 Recordings are saved in: `~/Videos/ScreenRecording`
-- 🔔 Notifications are handled using **mako**
-- 💻 Default terminal: **Alacritty**
-- 🚀 Launcher: **Rofi**
+-  Screenshots are saved in: `~/Pictures/Screenshots`
+-  Recordings are saved in: `~/Videos/ScreenRecording`
+-  Notifications are handled using **mako**
+-  Default terminal: **Alacritty**
+-  Launcher: **Rofi**
 
 ## 🤝 Contributing
 
@@ -135,4 +145,6 @@ Give a ⭐ if this project helped you!
 
 ---
 
-**Made with ❤️ for the Linux community**
+<p align="center">
+  <b><i>Made with ❤️ for the Linux community</i>i></b>
+</p>
