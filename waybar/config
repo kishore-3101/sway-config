@@ -10,6 +10,7 @@
     "format-wifi": "Wifi : {essid} |",
     "format-ethernet": "Ethernet Connected |",
     "format-disconnected": "⚠ Disconnected |",
+    "format-disabled": "Wifi Off |",
     "tooltip-format": "{ifname} via {gwaddr} |"
   },
 

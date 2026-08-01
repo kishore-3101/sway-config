@@ -44,11 +44,17 @@ set $menu rofi -show drun -theme ~/.config/rofi/theme.rasi
 # Poweroff
     bindsym $mod+Shift+P exec systemctl poweroff
 
+# Reboot
+    bindsym $mod+Shift+O exec systemctl reboot
+
 # Sleep
     bindsym $mod+L exec systemctl suspend
 
-#Lock and Sleep
+# Lock and Sleep
     bindsym $mod+Shift+L exec "swaylock -f -c 000000 && systemctl suspend"
+
+# Wifi toggle
+   bindsym $mod+Shift+W exec ~/.config/sway/scripts/wifi_toggle.sh
 
 # Exit sway
     bindsym $mod+Shift+e exec swaynag -t warning -m 'Do you really wanna exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
@@ -66,6 +72,9 @@ set $menu rofi -show drun -theme ~/.config/rofi/theme.rasi
 # Execute File Manager (Nautilus - Gnome File Manager) Install using sudo pacman -S nautilus
     bindsym $mod+f exec nautilus
 
+# Execute VS-Code
+    bindsym $mod+c exec code
+
 #------------------------------------------------#
 #           Hardware key controls.               #
 #------------------------------------------------#
@@ -80,10 +89,10 @@ set $menu rofi -show drun -theme ~/.config/rofi/theme.rasi
     bindsym XF86AudioMute exec pamixer -t
 
 #Brightness up (Increases brightness by 5%)
-    bindsym XF86MonBrightnessUp exec brightnessctl set +5%
+    bindsym XF86MonBrightnessUp exec brightnessctl set +3%
 
 #Brightness down (Decreases brightness by 5%)
-    bindsym XF86MonBrightnessDown exec brightnessctl set 5%-
+    bindsym XF86MonBrightnessDown exec brightnessctl set 3%-
 
 #------------------------------------------------#
 #                 Moving around                  #
@@ -218,6 +227,6 @@ bindsym $mod+r mode "resize"
 # Stop Recording
     bindsym $mod+S exec pkill wf-recorder
 
-exec_always pkill mako; mako
+exec_always mako
    
 include /etc/sway/config.d/*
