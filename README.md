@@ -1,4 +1,4 @@
-# 🖥️ Minimal Sway Setup
+# Minimal Sway Setup
 
 A clean and minimalist configuration for the ***Sway*** tiling window manager, designed to be lightweight, functional, and easy to customize.
 
@@ -6,7 +6,7 @@ A clean and minimalist configuration for the ***Sway*** tiling window manager, d
 
 ![Maintained](https://img.shields.io/badge/Maintained%3F-yes-green.svg)
 
-## ✨ Features
+## Features
 
 -  Minimalist and clean design
 -  Built for Wayland
@@ -16,7 +16,7 @@ A clean and minimalist configuration for the ***Sway*** tiling window manager, d
 -  Waybar integration with system status
 -  Easy customization
 
-## 📦 Dependencies
+## Dependencies
 
 > [!NOTE]
 > Package names may differ slightly across Linux distributions.
@@ -39,9 +39,9 @@ sudo apt install sway alacritty rofi pamixer brightnessctl waybar swayidle swayl
 sudo dnf install sway alacritty rofi pamixer brightnessctl waybar swayidle swaylock libnotify mako wf-recorder grim slurp wl-clipboard
 ```
 
-## ⌨️ Keybindings
+## Keybindings
 
-### 🚀 Applications
+### Applications
 
 | Keybinding | Action |
 |------------|--------|
@@ -50,7 +50,7 @@ sudo dnf install sway alacritty rofi pamixer brightnessctl waybar swayidle swayl
 | `Mod + F` | File Manager (Nautilus) |
 | `Mod + D` | App Launcher (Rofi) |
 
-### 🪟 Window Management
+### Window Management
 
 | Keybinding | Action |
 |------------|--------|
@@ -62,7 +62,7 @@ sudo dnf install sway alacritty rofi pamixer brightnessctl waybar swayidle swayl
 | `Mod + [1–0]` | Switch workspace |
 | `Mod + Shift + [1–0]` | Move window to workspace |
 
-### ⚙️ System Controls
+### System Controls
 
 | Keybinding | Action |
 |------------|--------|
@@ -72,14 +72,14 @@ sudo dnf install sway alacritty rofi pamixer brightnessctl waybar swayidle swayl
 | `Mod + Shift + C` | Toggle Caffeine mode |
 | `Mod + Shift + W` | Toggle Wi-Fi |
 
-### 📸 Screenshot
+### Screenshot
 
 | Keybinding | Action |
 |------------|--------|
 | `Print` | Full screen screenshot (saved + copied) |
 | `Shift + Print` | Area screenshot (saved + copied) |
 
-### 🎥 Screen Recording
+### Screen Recording
 
 | Keybinding | Action |
 |------------|--------|
@@ -87,14 +87,14 @@ sudo dnf install sway alacritty rofi pamixer brightnessctl waybar swayidle swayl
 | `Mod + Alt + R` | Record selected area |
 | `Mod + S` | Stop recording |
 
-## 🛠️ Installation
+## Installation
 
 ```bash
 git clone https://github.com/kishore-3101/sway-config.git
 cd sway-config
 cp -r alacritty mako rofi sway waybar wallpaper ~/.config/
 ```
-## 📁 Repo Structure
+## Repo Structure
 
 ```
 sway-config/
@@ -127,7 +127,7 @@ sway-config/
 └── README.md
 ```
 
-## 🧠 Notes
+## Notes
 
 -  Screenshots are saved in: `~/Pictures/Screenshots`
 -  Recordings are saved in: `~/Videos/ScreenRecording`
@@ -135,7 +135,7 @@ sway-config/
 -  Default terminal: **Alacritty**
 -  Launcher: **Rofi**
 
-## 🤝 Contributing
+## Contributing
 
 Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/kishore-3101/sway-config/issues).
 
@@ -146,5 +146,5 @@ Give a ⭐ if this project helped you!
 ---
 
 <p align="center">
-  <b><i>Made with ❤️ for the Linux community</i>i></b>
+  <b><i>Made with ❤️ for the Linux community</i></b>
 </p>
