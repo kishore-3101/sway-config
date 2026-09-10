@@ -13,8 +13,9 @@ window#waybar {
 #battery,
 #network,
 #pulseaudio,
-#custom-caffeine
-#custom-recording {
+#custom-caffeine,
+#custom-recording,
+#bluetooth {
   padding: 0 6px;
   font-weight: bold;
 }

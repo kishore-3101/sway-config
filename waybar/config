@@ -4,7 +4,7 @@
 
   "modules-left": ["sway/workspaces", "custom/add_workspace", "custom/recording"],
   "modules-center": ["clock"],
-  "modules-right": ["custom/caffeine", "pulseaudio", "network", "battery"],
+  "modules-right": ["custom/caffeine", "pulseaudio", "bluetooth", "network", "battery"],
 
   "network": {
     "format-wifi": "Wifi : {essid} |",
@@ -44,5 +44,15 @@
   "custom/recording": {
     "exec": "pgrep -x wf-recorder > /dev/null && echo '  🔴 Recording Screen ' || echo ''",
     "interval": 1
+  },
+  "bluetooth": {
+    "format": "Bluetooth : {status} |",
+    "format-on": "Bluetooth : On |",
+    "format-off": "Bluetooth : Off |",
+    "format-connected": "Bluetooth : {device_alias} |",
+    "format-disabled": "Bluetooth : Off |",
+    "tooltip": true,
+    "tooltip-format": "Bluetooth : {controller_alias}\n{num_connections} connected |",
+    "on-click": "blueman-manager"
   }
 }
