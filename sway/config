@@ -54,7 +54,10 @@ set $menu rofi -show drun -theme ~/.config/rofi/theme.rasi
     bindsym $mod+Shift+L exec "swaylock -f -c 000000 && systemctl suspend"
 
 # Wifi toggle
-   bindsym $mod+Shift+W exec ~/.config/sway/scripts/wifi_toggle.sh
+    bindsym $mod+Shift+W exec ~/.config/sway/scripts/wifi_toggle.sh
+
+# Bluetooth toggle
+    bindsym $mod+Shift+b exec ~/.config/sway/scripts/bluetooth_toggle.sh
 
 # Exit sway
     bindsym $mod+Shift+e exec swaynag -t warning -m 'Do you really wanna exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
