@@ -11,7 +11,7 @@ window {
     width: 700px;
     border: 0px;
     border-radius: 6px;
-    background-color: rgba(26, 1, 59, 0.6);
+    background-color: rgba(0, 0, 0, 0.6);
 }
 
 /* ---- MAIN ---- */
@@ -84,3 +84,4 @@ element-icon {
     background-color: transparent;
     size: 1em;
 }
+
