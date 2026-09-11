@@ -147,8 +147,13 @@ set $menu rofi -show drun -theme ~/.config/rofi/theme.rasi
 # Disable focus of containers on hover
     focus_follows_mouse no
 
- # Note: workspaces can have any name you want, not just numbers.
- # We just use 1-10 as the default.
+#------------------------------------------------#
+#              Window Decorations                #
+#------------------------------------------------#
+
+# Remove window title bars, keep a thin border
+  default_border pixel 1
+  default_floating_border pixel 2
 
 #---------------------------------------------------#
 #               Resizing containers                 #
@@ -231,5 +236,6 @@ bindsym $mod+r mode "resize"
     bindsym $mod+S exec pkill wf-recorder
 
 exec_always mako
-   
+
 include /etc/sway/config.d/*
+
