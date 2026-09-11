@@ -10,10 +10,10 @@ if [ -f "$STATE" ]; then
         timeout 125 'swaymsg "output * dpms off"' \
         resume 'swaymsg "output * dpms on"' &
 
-    notify-send "Caffeine OFF ☕"
+    notify-send "Caffine OFF"
 else
     pkill swayidle
     touch "$STATE"
-
-    notify-send "Caffeine ON 🚀"
+    
+    notify-send "Caffeine ON"
 fi
