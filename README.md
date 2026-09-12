@@ -47,6 +47,7 @@ sudo dnf install sway alacritty rofi pamixer brightnessctl waybar swayidle swayl
 |------------|--------|
 | `Mod + X` | Terminal (Alacritty) |
 | `Mod + B` | Brave Browser |
+| `Mod + C` | VS Code (Code - OSS) |
 | `Mod + F` | File Manager (Nautilus) |
 | `Mod + D` | App Launcher (Rofi) |
 
@@ -57,6 +58,7 @@ sudo dnf install sway alacritty rofi pamixer brightnessctl waybar swayidle swayl
 | `Mod + Q` | Kill focused window |
 | `Mod + Shift + R` | Reload Sway config |
 | `Mod + Arrow Keys` | Change focus |
+| `Mod + R` | Resize windows (Arrow keys to adjust & Exc/Enter to exit) |
 | `Mod + Shift + Arrow Keys` | Move window |
 | `Mod + Tab` | Next workspace |
 | `Mod + [1–0]` | Switch workspace |
@@ -67,8 +69,10 @@ sudo dnf install sway alacritty rofi pamixer brightnessctl waybar swayidle swayl
 | Keybinding | Action |
 |------------|--------|
 | `Mod + Shift + P` | Power off |
+| `Mod + Shift + O` | Reboot |
 | `Mod + L` | Suspend |
 | `Mod + Shift + L` | Lock + Suspend |
+| `Mod + Shift + E` | Exit Sway |
 | `Mod + Shift + C` | Toggle Caffeine mode |
 | `Mod + Shift + W` | Toggle Wi-Fi |
 | `Mod + Shift + B` | Toggle Bluetooth |
