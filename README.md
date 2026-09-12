@@ -71,6 +71,7 @@ sudo dnf install sway alacritty rofi pamixer brightnessctl waybar swayidle swayl
 | `Mod + Shift + L` | Lock + Suspend |
 | `Mod + Shift + C` | Toggle Caffeine mode |
 | `Mod + Shift + W` | Toggle Wi-Fi |
+| `Mod + Shift + B` | Toggle Bluetooth |
 
 ### Screenshot
 
@@ -103,11 +104,12 @@ sway-config/
 │   │   ├── caffeine.sh
 │   │   ├── caffeine_status.sh
 │   │   ├── wifi_toggle.sh
+|   |   ├── bluetooth_toggle.sh
 │   │   └── start_idle.sh
 │   └── config
 |
 ├──alacritty/
-|   └── alcritty.toml
+|   └── alacritty.toml
 │   
 ├── waybar/
 │   ├── scripts/
