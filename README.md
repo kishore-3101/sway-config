@@ -24,19 +24,19 @@ A clean and minimalist configuration for the ***Sway*** tiling window manager, d
 ### Arch Linux
 
 ```bash
-sudo pacman -S sway alacritty rofi pamixer brightnessctl waybar swayidle swaylock libnotify mako wf-recorder grim slurp wl-clipboard
+sudo pacman -S sway alacritty rofi pamixer brightnessctl waybar swayidle swaylock libnotify mako wf-recorder grim slurp wl-clipboard blueman
 ```
 
 ### Ubuntu / Debian
 
 ```bash
-sudo apt install sway alacritty rofi pamixer brightnessctl waybar swayidle swaylock libnotify mako wf-recorder grim slurp wl-clipboard
+sudo apt install sway alacritty rofi pamixer brightnessctl waybar swayidle swaylock libnotify mako wf-recorder grim slurp wl-clipboard blueman
 ```
 
 ### Fedora
 
 ```bash
-sudo dnf install sway alacritty rofi pamixer brightnessctl waybar swayidle swaylock libnotify mako wf-recorder grim slurp wl-clipboard
+sudo dnf install sway alacritty rofi pamixer brightnessctl waybar swayidle swaylock libnotify mako wf-recorder grim slurp wl-clipboard blueman
 ```
 
 ## Keybindings
@@ -58,7 +58,7 @@ sudo dnf install sway alacritty rofi pamixer brightnessctl waybar swayidle swayl
 | `Mod + Q` | Kill focused window |
 | `Mod + Shift + R` | Reload Sway config |
 | `Mod + Arrow Keys` | Change focus |
-| `Mod + R` | Resize windows (Arrow keys to adjust & Exc/Enter to exit) |
+| `Mod + R` | Resize windows (Arrow keys to adjust & Esc/Enter to exit) |
 | `Mod + Shift + Arrow Keys` | Move window |
 | `Mod + Tab` | Next workspace |
 | `Mod + [1–0]` | Switch workspace |
@@ -95,9 +95,19 @@ sudo dnf install sway alacritty rofi pamixer brightnessctl waybar swayidle swayl
 ## Installation
 
 ```bash
+# Clone the repository
 git clone https://github.com/kishore-3101/sway-config.git
 cd sway-config
+
+# Copy configuration to ~/.config
 cp -r alacritty mako rofi sway waybar wallpaper ~/.config/
+
+# Make the script files executable
+chmod +x ~/.config/sway/scripts/* ~/.config/waybar/scripts/*
+
+# Make directories to save screenshots and screen recordings
+mkdir -p ~/Pictures/Screenshots ~/Videos/ScreenRecording
+
 ```
 ## Repo Structure
 
