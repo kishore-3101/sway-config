@@ -147,14 +147,6 @@ set $menu rofi -show drun -theme ~/.config/rofi/theme.rasi
 # Disable focus of containers on hover
     focus_follows_mouse no
 
-#------------------------------------------------#
-#              Window Decorations                #
-#------------------------------------------------#
-
-# Remove window title bars, keep a thin border
-  default_border pixel 1
-  default_floating_border pixel 2
-
 #---------------------------------------------------#
 #               Resizing containers                 #
 #---------------------------------------------------#
@@ -172,6 +164,19 @@ mode "resize" {
     bindsym Escape mode "default"
 }
 bindsym $mod+r mode "resize"
+
+#-------------------------------------------------#
+#               Floating Window                   #
+#-------------------------------------------------#
+
+# Toggle floating window
+    bindsym $mod+Shift+F floating toggle
+
+# Move floating window
+    bindsym $alt+Left move left 50
+    bindsym $alt+Right move right 50
+    bindsym $alt+Up move up 50
+    bindsym $alt+Down move down 50
 
 #-------------------------------------------------#
 #       Trackpad and mouse Configuration          #
