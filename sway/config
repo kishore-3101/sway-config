@@ -173,10 +173,16 @@ bindsym $mod+r mode "resize"
     bindsym $mod+Shift+F floating toggle
 
 # Move floating window
-    bindsym $alt+Left move left 50
-    bindsym $alt+Right move right 50
-    bindsym $alt+Up move up 50
-    bindsym $alt+Down move down 50
+    bindsym $alt+Left move left 10px
+    bindsym $alt+Right move right 10px
+    bindsym $alt+Up move up 10px
+    bindsym $alt+Down move down 10px
+
+# Resize floating windows
+    bindsym $mod+$alt+Left  resize shrink width  20 px
+    bindsym $mod+$alt+Right resize grow   width  20 px
+    bindsym $mod+$alt+Up    resize grow   height 20 px
+    bindsym $mod+$alt+Down  resize shrink height 20 px
 
 #-------------------------------------------------#
 #       Trackpad and mouse Configuration          #
