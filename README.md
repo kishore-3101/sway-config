@@ -24,19 +24,19 @@ A clean and minimalist configuration for the ***Sway*** tiling window manager, d
 ### Arch Linux
 
 ```bash
-sudo pacman -S sway alacritty rofi pamixer brightnessctl waybar swayidle swaylock libnotify mako wf-recorder grim slurp wl-clipboard blueman
+sudo pacman -S sway alacritty rofi-wayland pamixer brightnessctl waybar swayidle swaylock libnotify mako wf-recorder grim slurp wl-clipboard blueman bluez-utils networkmanager jq ttf-font-awesome
 ```
 
 ### Ubuntu / Debian
 
 ```bash
-sudo apt install sway alacritty rofi pamixer brightnessctl waybar swayidle swaylock libnotify mako wf-recorder grim slurp wl-clipboard blueman
+brightnessctl waybar swayidle swaylock libnotify-bin mako-notifier wf-recorder grim slurp wl-clipboard blueman bluez network-manager jq fonts-font-awesome
 ```
 
 ### Fedora
 
 ```bash
-sudo dnf install sway alacritty rofi pamixer brightnessctl waybar swayidle swaylock libnotify mako wf-recorder grim slurp wl-clipboard blueman
+brightnessctl waybar swayidle swaylock libnotify-bin mako-notifier wf-recorder grim slurp wl-clipboard blueman bluez network-manager jq fonts-font-awesome
 ```
 
 ## Keybindings
@@ -63,6 +63,14 @@ sudo dnf install sway alacritty rofi pamixer brightnessctl waybar swayidle swayl
 | `Mod + Tab` | Next workspace |
 | `Mod + [1–0]` | Switch workspace |
 | `Mod + Shift + [1–0]` | Move window to workspace |
+
+### Floating Windows
+
+| Keybinding | Action |
+|------------|--------|
+| `Mod + Shift + F` | Toggle floating mode |
+| `Alt + Arrow Keys` | Move floating window (10px) |
+| `Mod + Alt + Arrow Keys` | Resize floating window (20px) |
 
 ### System Controls
 
