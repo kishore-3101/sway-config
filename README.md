@@ -30,13 +30,13 @@ sudo pacman -S sway alacritty rofi-wayland pamixer brightnessctl waybar swayidle
 ### Ubuntu / Debian
 
 ```bash
-brightnessctl waybar swayidle swaylock libnotify-bin mako-notifier wf-recorder grim slurp wl-clipboard blueman bluez network-manager jq fonts-font-awesome
+sudo apt install sway alacritty rofi pamixer brightnessctl waybar swayidle swaylock libnotify-bin mako-notifier wf-recorder grim slurp wl-clipboard blueman bluez network-manager jq fonts-font-awesome
 ```
 
 ### Fedora
 
 ```bash
-brightnessctl waybar swayidle swaylock libnotify-bin mako-notifier wf-recorder grim slurp wl-clipboard blueman bluez network-manager jq fonts-font-awesome
+sudo dnf install sway alacritty rofi pamixer brightnessctl waybar swayidle swaylock libnotify mako wf-recorder grim slurp wl-clipboard blueman bluez NetworkManager jq fontawesome-fonts
 ```
 
 ## Keybindings
